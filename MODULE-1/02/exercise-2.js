@@ -1,12 +1,5 @@
 // Exercise 2
 
-// Pseudocode soal 1
-/*
-Hint:
-1. Mengkonversi nilai suhu celsius ke fahrenheit
-2. 
-*/
-
 // Write a code to convert celsius to fahrenheit 
 // Example: 60 Celcius → 140 Fahrenheit
 
