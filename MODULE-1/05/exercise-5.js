@@ -134,13 +134,9 @@ console.log(combine([1, 2, 3], [4, 5, 6]))
 // belum
 
 function dupe(arr) {
-    result = []
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i; j < i; j++) {
-            if (arr[i] == arr[j]) {
-                result.push(arr[i])
-            }
-        }
+    const result = []
+    if (!arr.filter((a, b) => arr.indexOf(a) != b)) {
+        result.push(arr.indexOf())
     }
     return result
 }

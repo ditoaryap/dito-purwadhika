@@ -64,19 +64,74 @@ console.log(calcStdnData(student))
 //      ○ Show total method → Show total current transaction
 //      ○ Checkout method → Finalize transaction, return transaction data
 
-function shop() {
-    class product {
-        properties(name, price) {
-            this.name = name
-            this.price = price
-        }
-    }
-    class transaction {
-        properties(total, product) {
-            this.total = total
-            this.product = product
-        }
+class Product {
+    constructor() {
+        this.name;
+        this.price;
     }
 }
 
-shop()
+class Transaction extends Product {
+    constructor() {
+        super();
+        this.total = 0;
+        this.products = [];
+    }
+
+    addToCart() {
+        this.products.push({
+            name: this.name,
+            price: this.price,
+            qty: this.qty,
+        });
+    }
+
+    getTotalTransactions() {
+        let sum = 0;
+        for (let i = 0; i < this.products.length; i++) {
+            sum += this.products[i].qty * this.products[i].price;
+        }
+        return sum;
+    }
+
+    getTransactions() {
+        return {
+            total: this.getTotalTransactions(),
+            products: this.products,
+        };
+    }
+}
+
+const transact = new Transaction();
+
+transact.name = "Book";
+transact.price = 20000;
+transact.qty = 2;
+transact.addToCart();
+console.log(transact.name);
+console.log(transact.getTransactions());
+
+transact.name = "Card";
+transact.price = 10000;
+transact.qty = 4;
+transact.addToCart();
+console.log(transact.getTransactions());
+
+transact.name = "Card";
+transact.price = 10000;
+transact.qty = 4;
+transact.addToCart();
+console.log(transact.getTransactions());
+
+transact.name = "Chess";
+transact.price = 10000;
+transact.qty = 4;
+transact.addToCart();
+console.log(transact.getTransactions());
+
+transact.name = "Card";
+transact.price = 10000;
+transact.qty = 4;
+transact.addToCart();
+console.log(transact.getTotalTransactions());
+console.log(transact.getTransactions());
