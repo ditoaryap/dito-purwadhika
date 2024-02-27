@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ini Formulir</h1>
+    <p>
+        <a href="index.html">Home</a>
+    </p>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Data Diri</legend>
+            <label for="username">Username:</label>
+            <input type="text" name="username" required> <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" maxlength="10" required> <br>
+            <input type="checkbox" name="check"> <br>
+            <input type="radio" name="radio"> <br>
+            <input type="number" name="number" min="1" max="10" value="5"> <br>
+            <textarea rows="3" cols="20"></textarea><br>
+            <p>Apa warna favoirtmu?</p>
+            <select>
+                <option>Merah</option>
+                <option>Biru</option>
+                <option>Kuning</option>
+            </select>
+            <p>Apa makanan favoritmu?</p>
+            <select>
+                <option>Telur</option>
+                <option selected>Pete</option>
+                <option>Jengkol</option>
+            </select>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <hr>
+    <button type="submit">OK</button>
+    <button type="submit" onclick="console.log(2*3)">apply</button>
+</body>
+</html>
