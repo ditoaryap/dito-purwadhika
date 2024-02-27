@@ -1,0 +1,34 @@
+ALGORITMA PEMROGRAMAN
+
+SEARCHING :
+
+1. SEQUENTIAL SEARCH :
+Mencocokan Data yang dicari dengan semua data yang ada dalam kelompok data
+
+2. BINARY SEARCH : 
+Menemukan nilai tertentu dengan mengeliminasi setengah data secara berkala
+
+SORTING :
+
+1. BUBBLE SORT :
+Membandingkan data kemudian menukarkannya tiap iterasi data pusatnya berbeda
+
+2. SELECTION SORT : 
+secara berulang mencari data yang belum berurut
+
+3. INSERTION SORT :
+Menyisipkan angka ke posisi yang diinginkan
+
+4. QUICK SORT :
+Mengambil satu elemen untuk dijadikan nilai tengah,
+kemudian data lain diurutkan secara rekursif
+
+5. EXCHANGE SORT :
+Membandingkan data lalu menukarkannya,
+tapi data pusatnya selalu sama
+
+COMPLEXITY ADA 2 :
+
+1. TIME COMPLEXITY 
+
+2. SPACE COMPLEXITY
